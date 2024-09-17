@@ -20,8 +20,8 @@ namespace ClassLibrary1
         {
             Pedido nuevo_pedido = new Pedido(productos_pedido, numero_mesa);
             Pedidos_tomados.Add(nuevo_pedido.Id);
-            return nuevo_pedido;
-        }
+            
+        }return nuevo_pedido
 
     }
 }

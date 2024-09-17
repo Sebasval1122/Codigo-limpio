@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ClassLibrary1
 {
-    public class Mesa
+    public class Mesa: Restaurante
     {
         public int numero_mesa = 0;
         public int Capacidad;
@@ -18,12 +18,12 @@ namespace ClassLibrary1
         }
         public string Visualizar_mesas()
         {
-            
+            return Mesas.ToString();
         }
         public void Agregar_mesa(int capacidad)
         {
-            
-
+            Mesa nueva_mesa = new Mesa(capacidad);
+            Mesas.Add(nueva_mesa);
         }
     }
 }

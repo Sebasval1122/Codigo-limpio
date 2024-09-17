@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ClassLibrary1
 {
-    public class Menu
+    public class Menu: Restaurante
     {
         public List<Producto> Productos { get; set; }
         public void Agregar_producto(string nombre_producto, float precio, List<string> materiales)
